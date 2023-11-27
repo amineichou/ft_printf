@@ -17,7 +17,7 @@ make
 
 #### 3º - To use in your code, include the header
 ```c
-#include "libftprintf.a.h"
+#include "libftprintf.h"
 ```
 
-#### MAKEFILE RULES
+#### end

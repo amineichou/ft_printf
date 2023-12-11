@@ -6,7 +6,7 @@
 /*   By: moichou <moichou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/21 17:02:57 by moichou           #+#    #+#             */
-/*   Updated: 2023/11/27 22:48:22 by moichou          ###   ########.fr       */
+/*   Updated: 2023/12/08 15:24:49 by moichou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ size_t	ft_strlen(const char *str);
 void	ft_putchar(char c, int *length);
 int		ft_putstr(char *s, int *length);
 void	ft_putnbr(int n, int *length);
-void	ft_puthex(unsigned long long number, char form, int *length);
+void	ft_puthex(unsigned long number, char form, int *length);
 void	ft_unsigned_putnbr(unsigned int n, int *length);
 
 #endif

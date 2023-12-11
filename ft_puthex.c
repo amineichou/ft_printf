@@ -6,13 +6,13 @@
 /*   By: moichou <moichou@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/27 14:52:27 by moichou           #+#    #+#             */
-/*   Updated: 2023/11/27 22:49:41 by moichou          ###   ########.fr       */
+/*   Updated: 2023/12/07 22:25:54 by moichou          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static void	ft_puthex_lower(unsigned long long x, int *length)
+static void	ft_puthex_lower(unsigned long x, int *length)
 {
 	if (x >= 16)
 		ft_puthex_lower(x / 16, length);
@@ -20,7 +20,7 @@ static void	ft_puthex_lower(unsigned long long x, int *length)
 	(*length)++;
 }
 
-static void	ft_puthex_upper(unsigned long long x, int *length)
+static void	ft_puthex_upper(unsigned long x, int *length)
 {
 	if (x >= 16)
 		ft_puthex_upper(x / 16, length);
@@ -28,7 +28,7 @@ static void	ft_puthex_upper(unsigned long long x, int *length)
 	(*length)++;
 }
 
-void	ft_puthex(unsigned long long number, char form, int *length)
+void	ft_puthex(unsigned long number, char form, int *length)
 {
 	if (form == 'x')
 		ft_puthex_lower(number, length);
